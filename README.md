@@ -2,7 +2,7 @@
 
 **Live site: [reetam-dutta-24.github.io](https://reetam-dutta-24.github.io)**
 
-Full-stack software engineer and founder of [SkillFlow](https://github.com/reetam-dutta-24/skillFlow). I build with TypeScript, Next.js, PostgreSQL and Python ML, and I care about UI/UX and product ideas as much as the code behind them.
+Full-stack software engineer and founder of [SkillFlow](https://github.com/reetam-dutta-24/skillFlow). I build with TypeScript, Next.js, PostgreSQL and Python ML, Integrated real world applications and problems with AI, Use LLMS and AI Agents to make my creativity and work even better and faster , and I care about UI/UX and product ideas as much as the code behind them.
 
 B.E. Computer Science and Business Systems, Thapar Institute of Engineering and Technology (2027)
 
