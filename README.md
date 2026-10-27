@@ -2,7 +2,7 @@
 
 **Live site: [reetam-dutta-24.github.io](https://reetam-dutta-24.github.io)**
 
-Full-stack software engineer and founder of [SkillFlow](https://github.com/reetam-dutta-24/skillFlow). I build with TypeScript, Next.js, PostgreSQL and Python ML, Integrated real world applications and problems with AI, Use LLMS and AI Agents to make my creativity and work even better and faster , and I care about UI/UX and product ideas as much as the code behind them.
+Full-stack software engineer and founder of [SkillFlow](https://github.com/reetam-dutta-24/skillFlow). I build with TypeScript, Next.js, PostgreSQL and Python ML, and I care about UI/UX and product ideas as much as the code behind them.
 
 B.E. Computer Science and Business Systems, Thapar Institute of Engineering and Technology (2027)
 
@@ -24,9 +24,9 @@ B.E. Computer Science and Business Systems, Thapar Institute of Engineering and 
 | Project | What it is | Links |
 | --- | --- | --- |
 | **SkillFlow** | Learning platform where a stage unlocks only when an LLM verifies your own explanation. Live on AWS. | [Live](https://app.32-236-251-56.sslip.io) · [Code](https://github.com/reetam-dutta-24/skillFlow) |
+| **EntertainVerse** | AI entertainment hub with a hybrid recommender, RAG recaps and an assistant, realtime watch parties, running on 2 servers behind an AWS load balancer. | [Code](https://github.com/reetam-dutta-24/EntertainVerse) |
 | **CourtKinetics** *(in progress)* | Badminton performance analytics using pose estimation to test whether movement patterns predict rally outcomes. | [Code](https://github.com/reetam-dutta-24/courtKinetics) |
 | **King County Home Value Predictor** | Explainable ML valuation: XGBoost with a held-out test R² of 0.915, served through FastAPI and Streamlit. | [Live](https://kc-home-value.streamlit.app) · [Code](https://github.com/reetam-dutta-24/real-estate-price-prediction) |
-| **AniVerse** | One hub for anime, movies, K-dramas and music, with real-time communities. Designed in Figma first. | [Code](https://github.com/reetam-dutta-24/aniverse-application) |
 
 ## How it's built
 
