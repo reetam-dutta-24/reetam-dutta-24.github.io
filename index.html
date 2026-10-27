@@ -219,13 +219,13 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
   <main>
     <section class="hero" aria-labelledby="thesis">
       <h2 class="thesis" id="thesis">I take products from an idea to <em>production</em>, and I finish them.</h2>
-      <p class="intro">I started with a grocery website in HTML, CSS and JavaScript in 2023. Three years later I run <strong>SkillFlow</strong>, a learning platform I designed, built and deployed on AWS by myself. I work across the stack, from database design and APIs to UI/UX, and I bring ML into products when it solves a real problem.</p>
+      <p class="intro">I started with a grocery website in HTML, CSS and JavaScript in 2023. Three years later I run <strong>SkillFlow</strong>, a learning platform I designed, built and deployed on AWS by myself, and <strong>EntertainVerse</strong>, an AI entertainment hub running on two servers behind an AWS load balancer. I work across the stack, from database design and APIs to UI/UX, and I bring ML into products when it solves a real problem.</p>
 
       <div class="log" aria-label="Commits per project, June to October 2026">
         <div class="log-head">
           <div>
             <div class="label">Build log · Jun–Oct 2026</div>
-            <div class="log-total">345+ commits</div>
+            <div class="log-total">466 commits</div>
           </div>
           <span class="mono" style="color:var(--muted)">across 5 projects</span>
         </div>
@@ -253,6 +253,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
           <ul>
             <li><b>Explain-back gate:</b> each answer is reviewed by an LLM (Gemini). If the model is unavailable, nothing is saved, so the app never fakes a pass.</li>
             <li><b>Dopamine Detox:</b> a Detox Score that only verified learning can raise, with focus sessions and a weekly check-in.</li>
+            <li><b>RAG assistant:</b> answers from SkillFlow's own help and catalog with cited sources, using pgvector (HNSW) and full-text search fused with Reciprocal Rank Fusion. For a stage you haven't passed, it gives hints instead of answers.</li>
             <li>Accepted ideas become notes (Word or PDF export) and return for spaced recall; they also feed mastery, streaks and analytics.</li>
             <li>Built on Next.js Server Components and Server Actions, PostgreSQL with Prisma, Auth.js (Google OAuth), Redis rate limiting and Stripe subscriptions.</li>
             <li>Runs on AWS EC2 with Docker Compose and Caddy (HTTPS), nightly database backups to S3 and uptime monitoring.</li>
@@ -261,13 +262,44 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
             <div class="fact"><b>30</b><span>learning paths</span></div>
             <div class="fact"><b>246</b><span>stages</span></div>
             <div class="fact"><b>~900</b><span>curated resources</span></div>
-            <div class="fact"><b>220+</b><span>unit tests, plus 10 E2E</span></div>
+            <div class="fact"><b>280+</b><span>unit tests, plus 12 E2E</span></div>
             <div class="fact"><b>100</b><span>Lighthouse accessibility</span></div>
           </div>
-          <div class="stack"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span><span>Redis</span><span>Gemini API</span><span>Stripe</span><span>Docker</span><span>AWS EC2 + S3</span><span>GitHub Actions</span><span>Vitest</span><span>Playwright</span></div>
+          <div class="stack"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>PostgreSQL</span><span>pgvector</span><span>Prisma</span><span>Redis</span><span>Gemini API</span><span>Stripe</span><span>Docker</span><span>AWS EC2 + S3</span><span>GitHub Actions</span><span>Vitest</span><span>Playwright</span></div>
           <div class="links">
             <a href="https://app.32-236-251-56.sslip.io" target="_blank" rel="noopener">Open live app ↗</a>
             <a href="https://github.com/reetam-dutta-24/skillFlow" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="case flagship">
+          <div class="case-top">
+            <div>
+              <h3>EntertainVerse</h3>
+              <p class="kicker">AI entertainment hub for anime, shows, K-dramas, films and music</p>
+            </div>
+            <div class="chips">
+              <span class="chip live">Runs on AWS</span>
+              <span class="chip date">Jul – Oct 2026</span>
+            </div>
+          </div>
+          <p class="usp">People pay for several streaming apps and still lose 20 minutes scrolling. EntertainVerse answers what to watch, why, and in what order.</p>
+          <ul>
+            <li><b>Hybrid recommender:</b> explicit taste, Gemini embeddings and collaborative filtering, with a reason on every card. In an offline leave-one-out test it scored MRR@20 0.350 against 0.203 for a popularity baseline.</li>
+            <li><b>AI mode and RAG:</b> turns your mood into a watch or listen plan that fits your weekly hours, spoiler-safe "catch me up" recaps grounded in episode guides, and an in-app assistant with cited sources.</li>
+            <li><b>Social and realtime:</b> AI Match rooms, synced watch and listen parties where the host can share their screen, WebRTC voice rooms, and live chat and DMs with typing and online status.</li>
+            <li><b>Built to scale:</b> two EC2 servers behind an AWS Application Load Balancer, with a Redis Socket.IO adapter and shared party state, S3 uploads, health checks and graceful shutdown. Party members reconnect to the other server without losing their place.</li>
+            <li>AI-assisted admin CMS that imports titles and music from TMDB, AniList, Deezer, MusicBrainz and Apple Music, with an AI review before publishing.</li>
+          </ul>
+          <div class="facts">
+            <div class="fact"><b>449</b><span>unit tests</span></div>
+            <div class="fact"><b>112</b><span>REST route handlers</span></div>
+            <div class="fact"><b>57</b><span>database models</span></div>
+            <div class="fact"><b>0</b><span>axe accessibility violations</span></div>
+          </div>
+          <div class="stack"><span>Next.js 16</span><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span><span>Redis</span><span>Socket.IO</span><span>WebRTC</span><span>Gemini (embeddings, RAG)</span><span>Docker</span><span>AWS EC2 + ALB + S3</span><span>GitHub Actions</span><span>Playwright</span><span>Figma</span></div>
+          <div class="links">
+            <a href="https://github.com/reetam-dutta-24/EntertainVerse" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
         </article>
 
@@ -286,16 +318,17 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
           <div class="roadmap" aria-label="Pipeline status">
             <div class="step done"><span class="label">Done</span>Web app, auth, dashboard, CI</div>
             <div class="step done"><span class="label">Done</span>Pose extraction (MediaPipe)</div>
-            <div class="step next"><span class="label">Next</span>Multi-player tracking (YOLO-Pose)</div>
+            <div class="step done"><span class="label">Built · validating</span>Multi-player tracking (YOLO-Pose + ByteTrack)</div>
             <div class="step next"><span class="label">Next</span>Rally features and models</div>
             <div class="step next"><span class="label">Next</span>Hypothesis tests and video upload</div>
           </div>
           <ul>
             <li>Python pipeline (OpenCV, MediaPipe) writes 33 body landmarks per frame, using each frame's own timestamp because the clips have variable frame rates.</li>
             <li>On a 60-second test clip: about 97% of frames detected, with ankle and knee visibility scores of 0.92–0.97.</li>
+            <li>Because MediaPipe tracks only one person, added a YOLO-Pose + ByteTrack extractor that keeps a persistent ID for each player, plus overlay scripts to check tracks visually.</li>
             <li>Web app with Auth.js (Google OAuth and email/password), 3-step onboarding, Prisma models for players, sessions and rallies, and a Recharts dashboard with CSV export. It runs on seeded data until the ML pipeline produces real results.</li>
           </ul>
-          <div class="stack"><span>Next.js 16</span><span>TypeScript</span><span>PostgreSQL (Supabase)</span><span>Prisma</span><span>Auth.js</span><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>GitHub Actions</span></div>
+          <div class="stack"><span>Next.js 16</span><span>TypeScript</span><span>PostgreSQL (Supabase)</span><span>Prisma</span><span>Auth.js</span><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>YOLO-Pose</span><span>ByteTrack</span><span>GitHub Actions</span></div>
           <div class="links"><a href="https://github.com/reetam-dutta-24/courtKinetics" target="_blank" rel="noopener">GitHub ↗</a></div>
         </article>
 
@@ -329,29 +362,6 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
           </div>
         </article>
 
-        <article class="case">
-          <div class="case-top">
-            <div>
-              <h3>AniVerse</h3>
-              <p class="kicker">Entertainment and social hub · full-stack and UI/UX</p>
-            </div>
-            <div class="chips">
-              <span class="chip date">Jul 2026</span>
-            </div>
-          </div>
-          <p class="usp">One place for anime, movies, K-dramas and music, driven by a single taste profile, with fan communities around it.</p>
-          <ul>
-            <li>Designed the UI/UX in Figma, then built watchlists, collaborative collections and recommendations from an onboarding taste quiz.</li>
-            <li>Real-time community chat and direct messages with Socket.IO, plus friend requests and communities you join by code.</li>
-            <li>Role-gated admin CMS with 4 admin roles for content, music, artists and the whole platform.</li>
-          </ul>
-          <div class="facts">
-            <div class="fact"><b>81</b><span>REST API routes</span></div>
-            <div class="fact"><b>46</b><span>database models</span></div>
-          </div>
-          <div class="stack"><span>Next.js 16</span><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span><span>Socket.IO</span><span>Auth.js</span><span>Tailwind CSS</span><span>Figma</span></div>
-          <div class="links"><a href="https://github.com/reetam-dutta-24/aniverse-application" target="_blank" rel="noopener">GitHub ↗</a></div>
-        </article>
 
       </div>
     </section>
@@ -467,10 +477,10 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
       <div class="skills">
         <div class="skill-group"><div class="label">Languages</div><p>C++, Python, TypeScript, JavaScript, SQL, HTML5, CSS3</p></div>
         <div class="skill-group"><div class="label">Frontend &amp; UI/UX</div><p>React, Next.js, Tailwind CSS, shadcn/ui, Framer Motion, Recharts, Streamlit, Figma, design systems</p></div>
-        <div class="skill-group"><div class="label">Backend</div><p>Node.js, Express.js, Django, FastAPI, REST APIs, Socket.IO, Auth.js, OAuth 2.0, JWT, Zod, Stripe</p></div>
-        <div class="skill-group"><div class="label">Data</div><p>PostgreSQL, MySQL, SQLite, Redis, Prisma ORM, Supabase</p></div>
-        <div class="skill-group"><div class="label">AI / ML</div><p>pandas, NumPy, scikit-learn, XGBoost, SHAP, MLflow, OpenCV, MediaPipe, Matplotlib, Seaborn, LLM APIs</p></div>
-        <div class="skill-group"><div class="label">DevOps &amp; testing</div><p>AWS (EC2, S3), Docker, GitHub Actions, Jenkins, Linux, Vitest, Playwright, Selenium</p></div>
+        <div class="skill-group"><div class="label">Backend</div><p>Node.js, Express.js, Django, FastAPI, REST APIs, Socket.IO, WebRTC, Auth.js, OAuth 2.0, JWT, Zod, Stripe</p></div>
+        <div class="skill-group"><div class="label">Data</div><p>PostgreSQL, pgvector, MySQL, SQLite, Redis, Prisma ORM, Supabase</p></div>
+        <div class="skill-group"><div class="label">AI / ML</div><p>RAG, embeddings, recommender systems, Gemini API, scikit-learn, XGBoost, SHAP, MLflow, pandas, NumPy, OpenCV, YOLO, MediaPipe</p></div>
+        <div class="skill-group"><div class="label">DevOps &amp; testing</div><p>AWS (EC2, ALB, S3), Docker, Nginx, GitHub Actions, GHCR, Jenkins, Linux, Vitest, Playwright, Selenium</p></div>
         <div class="skill-group"><div class="label">Core CS</div><p>Data structures and algorithms (300+ LeetCode problems), OOP, DBMS, operating systems, computer networks, system design</p></div>
       </div>
     </section>
@@ -484,9 +494,10 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
         <div class="t-item"><span class="label">Jun – Jul 2025</span><h3>First internship at IOCL</h3><p>Built a trainee approval and management system for the Pipelines Division.</p></div>
         <div class="t-item"><span class="label">Oct 2025 – Apr 2026</span><h3>Moving to full-stack</h3><p>EventConnect, the Campus Food Court DevOps project, a School LMS and evenTCircle: Next.js, Prisma, Docker and real data models.</p></div>
         <div class="t-item"><span class="label">Jun – Jul 2026</span><h3>Second IOCL internship</h3><p>Built the core of an LNG supply-planning system for real planners.</p></div>
-        <div class="t-item"><span class="label">Jul 2026</span><h3>AniVerse</h3><p>A full social app designed in Figma first, then built end to end.</p></div>
+        <div class="t-item"><span class="label">Jul 2026</span><h3>AniVerse begins</h3><p>A social entertainment app designed in Figma first. It later grew into EntertainVerse.</p></div>
         <div class="t-item"><span class="label">Sep – Oct 2026</span><h3>ML in production</h3><p>The home value predictor goes live with an API and an explainable front end. CourtKinetics begins.</p></div>
-        <div class="t-item mark"><span class="label">Oct 2026</span><h3>SkillFlow ships</h3><p>Feature list closed on 16 October and deployed to AWS the next day, with HTTPS, backups, CI and monitoring.</p></div>
+        <div class="t-item mark"><span class="label">Oct 2026</span><h3>SkillFlow ships</h3><p>Feature list closed on 16 October and deployed to AWS the next day, with HTTPS, backups, CI and monitoring. A RAG assistant followed.</p></div>
+        <div class="t-item mark"><span class="label">Oct 2026</span><h3>EntertainVerse goes multi-server</h3><p>RAG, a hybrid recommender, and two servers behind an AWS load balancer, tested with a live failover.</p></div>
       </div>
     </section>
 
@@ -509,9 +520,9 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
 <script>
 (function () {
   var data = [
-    ["SkillFlow", 213], ["Home Value Predictor", 69], ["AniVerse", 32], ["CourtKinetics", 22], ["IOCL LNG planner", 9]
+    ["SkillFlow", 216], ["EntertainVerse", 144], ["Home Value Predictor", 69], ["CourtKinetics", 28], ["IOCL LNG planner", 9]
   ];
-  var max = 213, el = document.getElementById("bars");
+  var max = 216, el = document.getElementById("bars");
   data.forEach(function (d) {
     var row = document.createElement("div");
     row.className = "bar-row";
