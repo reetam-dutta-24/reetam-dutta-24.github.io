@@ -16,7 +16,7 @@ B.E. Computer Science and Business Systems, Thapar Institute of Engineering and 
 | **Experience** | Software Development Engineer Intern at Indian Oil Corporation Ltd. (IOCL), 2026 |
 | **All work** | Every other project from my two GitHub accounts, grouped by year and labeled by status |
 | **Skills** | Languages, frontend and UI/UX, backend, data, AI/ML, DevOps and core CS |
-| **Journey** | From my first website in 2023 to shipping SkillFlow in 2026 |
+| **Journey** | From my first website in 2023 to SkillFlow, EntertainVerse and Tomorrowhood in 2026 |
 | **Leadership** | OWASP Society coordinator, Smart India Hackathon 2024, AWS Academy certifications |
 
 ## Featured projects
@@ -25,7 +25,7 @@ B.E. Computer Science and Business Systems, Thapar Institute of Engineering and 
 | --- | --- | --- |
 | **SkillFlow** | Learning platform where a stage unlocks only when an LLM verifies your own explanation. Live on AWS. | [Live](https://app.32-236-251-56.sslip.io) · [Code](https://github.com/reetam-dutta-24/skillFlow) |
 | **EntertainVerse** | AI entertainment hub with a hybrid recommender, RAG recaps and an assistant, realtime watch parties, running on 2 servers behind an AWS load balancer. | [Code](https://github.com/reetam-dutta-24/EntertainVerse) |
-| **CourtKinetics** *(in progress)* | Badminton performance analytics using pose estimation to test whether movement patterns predict rally outcomes. | [Code](https://github.com/reetam-dutta-24/courtKinetics) |
+| **Tomorrowhood** *(in progress)* | Neighbourhood-level relocation advisor for 10 global cities that ranks areas by where they are heading by 2035. London data pipeline built on 16,889 H3 cells. | [Code](https://github.com/reetam-dutta-24/Tomorrowhood) |
 | **King County Home Value Predictor** | Explainable ML valuation: XGBoost with a held-out test R² of 0.915, served through FastAPI and Streamlit. | [Live](https://kc-home-value.streamlit.app) · [Code](https://github.com/reetam-dutta-24/real-estate-price-prediction) |
 
 ## How it's built
