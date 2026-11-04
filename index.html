@@ -192,7 +192,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
   <aside class="rail" aria-label="About Reetam">
     <div>
       <h1 class="name">Reetam<br>Dutta</h1>
-      <p class="role">Full-stack software engineer. Founder of SkillFlow. Builds with TypeScript, Next.js, PostgreSQL and Python ML.</p>
+      <p class="role">Innovation-driven full-stack engineer and founder of SkillFlow. I take original ideas all the way to finished, shipped products.</p>
     </div>
     <p class="status">Open to SDE &amp; full-stack roles</p>
     <nav class="nav" aria-label="Sections">
@@ -219,15 +219,15 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
   <main>
     <section class="hero" aria-labelledby="thesis">
       <h2 class="thesis" id="thesis">I take products from an idea to <em>production</em>, and I finish them.</h2>
-      <p class="intro">I started with a grocery website in HTML, CSS and JavaScript in 2023. Three years later I run <strong>SkillFlow</strong>, a learning platform I designed, built and deployed on AWS by myself, and <strong>EntertainVerse</strong>, an AI entertainment hub running on two servers behind an AWS load balancer. I work across the stack, from database design and APIs to UI/UX, and I bring ML into products when it solves a real problem.</p>
+      <p class="intro">I started with a grocery website in HTML, CSS and JavaScript in 2023. Three years later I run <strong>SkillFlow</strong>, an AI learning platform I designed, built and deployed on AWS by myself, and <strong>EntertainVerse</strong>, an AI entertainment hub running on two servers behind an AWS load balancer. I love new ideas and modern technology, and I use AI tools and agents to move faster, with tests and CI keeping the quality high.</p>
 
       <div class="log" aria-label="Commits per project, June to October 2026">
         <div class="log-head">
           <div>
-            <div class="label">Build log · Jun–Oct 2026</div>
-            <div class="log-total">466 commits</div>
+            <div class="label">Build log · since Jun 2026</div>
+            <div class="log-total">485 commits</div>
           </div>
-          <span class="mono" style="color:var(--muted)">across 5 projects</span>
+          <span class="mono" style="color:var(--muted)">across 6 projects</span>
         </div>
         <div class="bars" id="bars"></div>
       </div>
@@ -241,7 +241,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
           <div class="case-top">
             <div>
               <h3>SkillFlow</h3>
-              <p class="kicker">Mastery-first learning platform</p>
+              <p class="kicker">AI-powered mastery learning platform</p>
             </div>
             <div class="chips">
               <span class="chip role">Founder</span>
@@ -306,30 +306,36 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
         <article class="case">
           <div class="case-top">
             <div>
-              <h3>CourtKinetics</h3>
-              <p class="kicker">Badminton performance analytics with pose estimation</p>
+              <h3>Tomorrowhood</h3>
+              <p class="kicker">Neighbourhood-level relocation advisor for 10 global cities</p>
             </div>
             <div class="chips">
               <span class="chip wip">In progress</span>
-              <span class="chip date">Sep 2026 – now</span>
+              <span class="chip date">Oct 2026 – now</span>
             </div>
           </div>
-          <p class="usp">Instead of generic match stats, it tests four specific questions: does reaction timing predict who wins the point, do unforced errors have warning signs, does doubles court coverage predict lost rallies, and how often are attacking chances converted?</p>
+          <p class="usp">Where to live in 2035, not 2026. Most tools rank cities by how they look today; Tomorrowhood ranks neighbourhoods by where they are heading, weighing climate risk, sustainability, geopolitics, immigration routes and personal fit.</p>
           <div class="roadmap" aria-label="Pipeline status">
-            <div class="step done"><span class="label">Done</span>Web app, auth, dashboard, CI</div>
-            <div class="step done"><span class="label">Done</span>Pose extraction (MediaPipe)</div>
-            <div class="step done"><span class="label">Built · validating</span>Multi-player tracking (YOLO-Pose + ByteTrack)</div>
-            <div class="step next"><span class="label">Next</span>Rally features and models</div>
-            <div class="step next"><span class="label">Next</span>Hypothesis tests and video upload</div>
+            <div class="step done"><span class="label">Done</span>10-city data coverage scorecard</div>
+            <div class="step done"><span class="label">Done</span>London H3 grid and points table</div>
+            <div class="step done"><span class="label">Done</span>Per-hexagon and access features</div>
+            <div class="step next"><span class="label">Next</span>Housing prices (HM Land Registry)</div>
+            <div class="step next"><span class="label">Next</span>Forecasts, scenarios, ranking</div>
           </div>
           <ul>
-            <li>Python pipeline (OpenCV, MediaPipe) writes 33 body landmarks per frame, using each frame's own timestamp because the clips have variable frame rates.</li>
-            <li>On a 60-second test clip: about 97% of frames detected, with ankle and knee visibility scores of 0.92–0.97.</li>
-            <li>Because MediaPipe tracks only one person, added a YOLO-Pose + ByteTrack extractor that keeps a persistent ID for each player, plus overlay scripts to check tracks visually.</li>
-            <li>Web app with Auth.js (Google OAuth and email/password), 3-step onboarding, Prisma models for players, sessions and rallies, and a Recharts dashboard with CSV export. It runs on seeded data until the ML pipeline produces real results.</li>
+            <li><b>Glass-box by design:</b> every planned score links to its source, licence and confidence, and data richness is shown as confidence, never as quality.</li>
+            <li><b>Ethical guardrails:</b> no ethnicity or race features; community features are opt-in and positive-only, so there is never an option to avoid areas because of who lives there.</li>
+            <li><b>Data scorecard for 10 cities:</b> measured OpenStreetMap coverage on equal 6 km squares. Paris has about 1% of buildings with an address because France keeps addresses in a separate national database, so tag completeness is read against each city's conventions.</li>
+            <li><b>London pipeline:</b> a Geofabrik extract turned into a Parquet points table with pyosmium, then per-hexagon features in DuckDB across 16,889 H3 cells, plus ring-based access features at about 300 m and 1.2 km.</li>
+            <li>A sanity check found about 70% of raw amenity points were street furniture, which had made Heathrow look like London's richest amenity area; an editable taxonomy now counts them separately.</li>
           </ul>
-          <div class="stack"><span>Next.js 16</span><span>TypeScript</span><span>PostgreSQL (Supabase)</span><span>Prisma</span><span>Auth.js</span><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>YOLO-Pose</span><span>ByteTrack</span><span>GitHub Actions</span></div>
-          <div class="links"><a href="https://github.com/reetam-dutta-24/courtKinetics" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <div class="facts">
+            <div class="fact"><b>10</b><span>cities in scope</span></div>
+            <div class="fact"><b>16,889</b><span>H3 cells for London</span></div>
+            <div class="fact"><b>70+</b><span>features in the catalog</span></div>
+          </div>
+          <div class="stack"><span>Python</span><span>pandas</span><span>GeoPandas</span><span>Shapely</span><span>H3</span><span>pyosmium</span><span>DuckDB</span><span>Parquet</span><span>Overpass API</span><span>OpenStreetMap</span></div>
+          <div class="links"><a href="https://github.com/reetam-dutta-24/Tomorrowhood" target="_blank" rel="noopener">GitHub ↗</a></div>
         </article>
 
         <article class="case">
@@ -390,6 +396,12 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
       <div class="year">
         <div class="y">2026</div>
         <div class="mini-grid">
+          <article class="mini">
+            <div class="mini-top"><h3>CourtKinetics</h3><span class="chip learn">Research prototype</span></div>
+            <p>Badminton performance analytics from match video. Built a Next.js web app, a MediaPipe pose pipeline (about 97% frame detection on a test clip) and a YOLO-Pose + ByteTrack multi-player tracker before parking it.</p>
+            <div class="stack"><span>Next.js</span><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>YOLO-Pose</span></div>
+            <a href="https://github.com/reetam-dutta-24/courtKinetics" target="_blank" rel="noopener">GitHub ↗</a>
+          </article>
           <article class="mini">
             <div class="mini-top"><h3>evenTCircle</h3><span class="chip wip">In progress</span></div>
             <p>A social event platform that helps people who've moved to a new city meet others through AI-matched group experiences. Landing page, auth and the user dashboard UI are built, on a 30-model Prisma schema.</p>
@@ -478,9 +490,10 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
         <div class="skill-group"><div class="label">Languages</div><p>C++, Python, TypeScript, JavaScript, SQL, HTML5, CSS3</p></div>
         <div class="skill-group"><div class="label">Frontend &amp; UI/UX</div><p>React, Next.js, Tailwind CSS, shadcn/ui, Framer Motion, Recharts, Streamlit, Figma, design systems</p></div>
         <div class="skill-group"><div class="label">Backend</div><p>Node.js, Express.js, Django, FastAPI, REST APIs, Socket.IO, WebRTC, Auth.js, OAuth 2.0, JWT, Zod, Stripe</p></div>
-        <div class="skill-group"><div class="label">Data</div><p>PostgreSQL, pgvector, MySQL, SQLite, Redis, Prisma ORM, Supabase</p></div>
-        <div class="skill-group"><div class="label">AI / ML</div><p>RAG, embeddings, recommender systems, Gemini API, scikit-learn, XGBoost, SHAP, MLflow, pandas, NumPy, OpenCV, YOLO, MediaPipe</p></div>
+        <div class="skill-group"><div class="label">Data</div><p>PostgreSQL, pgvector, MySQL, SQLite, Redis, Prisma ORM, Supabase, DuckDB, Parquet, GeoPandas, H3</p></div>
+        <div class="skill-group"><div class="label">AI / ML</div><p>RAG, embeddings, recommender systems, Gemini API, scikit-learn, XGBoost, SHAP, MLflow, pandas, NumPy</p></div>
         <div class="skill-group"><div class="label">DevOps &amp; testing</div><p>AWS (EC2, ALB, S3), Docker, Nginx, GitHub Actions, GHCR, Jenkins, Linux, Vitest, Playwright, Selenium</p></div>
+        <div class="skill-group"><div class="label">AI productivity tools</div><p>Claude Code, Cursor, AI agents, prompt engineering, spec-driven development</p></div>
         <div class="skill-group"><div class="label">Core CS</div><p>Data structures and algorithms (300+ LeetCode problems), OOP, DBMS, operating systems, computer networks, system design</p></div>
       </div>
     </section>
@@ -498,6 +511,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
         <div class="t-item"><span class="label">Sep – Oct 2026</span><h3>ML in production</h3><p>The home value predictor goes live with an API and an explainable front end. CourtKinetics begins.</p></div>
         <div class="t-item mark"><span class="label">Oct 2026</span><h3>SkillFlow ships</h3><p>Feature list closed on 16 October and deployed to AWS the next day, with HTTPS, backups, CI and monitoring. A RAG assistant followed.</p></div>
         <div class="t-item mark"><span class="label">Oct 2026</span><h3>EntertainVerse goes multi-server</h3><p>RAG, a hybrid recommender, and two servers behind an AWS load balancer, tested with a live failover.</p></div>
+        <div class="t-item mark"><span class="label">Oct – Nov 2026</span><h3>Tomorrowhood begins</h3><p>A relocation advisor for 10 global cities, starting with a data scorecard and a 16,889-cell London pipeline.</p></div>
       </div>
     </section>
 
@@ -520,7 +534,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
 <script>
 (function () {
   var data = [
-    ["SkillFlow", 216], ["EntertainVerse", 144], ["Home Value Predictor", 69], ["CourtKinetics", 28], ["IOCL LNG planner", 9]
+    ["SkillFlow", 216], ["EntertainVerse", 144], ["Home Value Predictor", 69], ["CourtKinetics", 28], ["Tomorrowhood", 19], ["IOCL LNG planner", 9]
   ];
   var max = 216, el = document.getElementById("bars");
   data.forEach(function (d) {
