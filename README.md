@@ -2,7 +2,7 @@
 
 **Live site: [reetam-dutta-24.github.io](https://reetam-dutta-24.github.io)**
 
-Full-stack software engineer and founder of [SkillFlow](https://github.com/reetam-dutta-24/skillFlow). I build with TypeScript, Next.js, PostgreSQL and Python ML, and I care about UI/UX and product ideas as much as the code behind them.
+Full-stack software engineer and founder of [LearnProof](https://github.com/reetam-dutta-24/skillFlow). I build with TypeScript, Next.js, PostgreSQL and Python ML, and I care about UI/UX and product ideas as much as the code behind them.
 
 B.E. Computer Science and Business Systems, Thapar Institute of Engineering and Technology (2027)
 
@@ -16,15 +16,15 @@ B.E. Computer Science and Business Systems, Thapar Institute of Engineering and 
 | **Experience** | Software Development Engineer Intern at Indian Oil Corporation Ltd. (IOCL), 2026 |
 | **All work** | Every other project from my two GitHub accounts, grouped by year and labeled by status |
 | **Skills** | Languages, frontend and UI/UX, backend, data, AI/ML, DevOps and core CS |
-| **Journey** | From my first website in 2023 to SkillFlow, EntertainVerse and Tomorrowhood in 2026 |
+| **Journey** | From my first website in 2023 to LearnProof, EntertainVerse and Tomorrowhood in 2026 |
 | **Leadership** | OWASP Society coordinator, Smart India Hackathon 2024, AWS Academy certifications |
 
 ## Featured projects
 
 | Project | What it is | Links |
 | --- | --- | --- |
-| **SkillFlow** | Learning platform where a stage unlocks only when an LLM verifies your own explanation. Live on AWS. | [Live](https://app.32-236-251-56.sslip.io) · [Code](https://github.com/reetam-dutta-24/skillFlow) |
-| **EntertainVerse** | AI entertainment hub with a hybrid recommender, RAG recaps and an assistant, realtime watch parties, running on 2 servers behind an AWS load balancer. | [Code](https://github.com/reetam-dutta-24/EntertainVerse) |
+| **LearnProof** *(formerly SkillFlow)* | Learning platform where a stage unlocks only when AI verifies your own explanation, typed or spoken, with AI-written answer detection and hands-on proof of work on practical paths. Live on AWS. | [Live](https://app.32-236-251-56.sslip.io) · [Code](https://github.com/reetam-dutta-24/skillFlow) |
+| **EntertainVerse** | AI entertainment hub with a hybrid recommender, RAG recaps and an assistant, realtime watch parties, running on 2 servers behind an AWS load balancer. | [Live](https://entertainverse.dpdns.org) · [Code](https://github.com/reetam-dutta-24/EntertainVerse) |
 | **Tomorrowhood** *(in progress)* | Neighbourhood-level relocation advisor for 10 global cities that ranks areas by where they are heading by 2035. London data pipeline built on 16,889 H3 cells. | [Code](https://github.com/reetam-dutta-24/Tomorrowhood) |
 | **King County Home Value Predictor** | Explainable ML valuation: XGBoost with a held-out test R² of 0.915, served through FastAPI and Streamlit. | [Live](https://kc-home-value.streamlit.app) · [Code](https://github.com/reetam-dutta-24/real-estate-price-prediction) |
 
