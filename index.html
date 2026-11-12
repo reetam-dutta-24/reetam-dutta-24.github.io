@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Reetam Dutta</title>
-<meta name="description" content="Reetam Dutta, full-stack software engineer and founder of SkillFlow. Projects, experience and build log.">
+<meta name="description" content="Reetam Dutta, full-stack software engineer and founder of LearnProof. Projects, experience and build log.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -192,7 +192,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
   <aside class="rail" aria-label="About Reetam">
     <div>
       <h1 class="name">Reetam<br>Dutta</h1>
-      <p class="role">Innovation-driven full-stack engineer and founder of SkillFlow. I take original ideas all the way to finished, shipped products.</p>
+      <p class="role">Innovation-driven full-stack engineer and founder of LearnProof. I take original ideas all the way to finished, shipped products.</p>
     </div>
     <p class="status">Open to SDE &amp; full-stack roles</p>
     <nav class="nav" aria-label="Sections">
@@ -219,13 +219,13 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
   <main>
     <section class="hero" aria-labelledby="thesis">
       <h2 class="thesis" id="thesis">I take products from an idea to <em>production</em>, and I finish them.</h2>
-      <p class="intro">I started with a grocery website in HTML, CSS and JavaScript in 2023. Three years later I run <strong>SkillFlow</strong>, an AI learning platform I designed, built and deployed on AWS by myself, and <strong>EntertainVerse</strong>, an AI entertainment hub running on two servers behind an AWS load balancer. I love new ideas and modern technology, and I use AI tools and agents to move faster, with tests and CI keeping the quality high.</p>
+      <p class="intro">I started with a grocery website in HTML, CSS and JavaScript in 2023. Three years later I run <strong>LearnProof</strong>, an AI learning platform I designed, built and deployed on AWS by myself, and <strong>EntertainVerse</strong>, an AI entertainment hub running on two servers behind an AWS load balancer. I love new ideas and modern technology, and I use AI tools and agents to move faster, with tests and CI keeping the quality high.</p>
 
       <div class="log" aria-label="Commits per project, June to October 2026">
         <div class="log-head">
           <div>
             <div class="label">Build log · since Jun 2026</div>
-            <div class="log-total">485 commits</div>
+            <div class="log-total">509 commits</div>
           </div>
           <span class="mono" style="color:var(--muted)">across 6 projects</span>
         </div>
@@ -240,8 +240,8 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
         <article class="case flagship">
           <div class="case-top">
             <div>
-              <h3>SkillFlow</h3>
-              <p class="kicker">AI-powered mastery learning platform</p>
+              <h3>LearnProof</h3>
+              <p class="kicker">AI-powered proof-of-learning platform (formerly SkillFlow)</p>
             </div>
             <div class="chips">
               <span class="chip role">Founder</span>
@@ -249,11 +249,14 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
               <span class="chip date">Sep 2026 – now</span>
             </div>
           </div>
-          <p class="usp">You only pass a stage when you can explain each idea in your own words and an AI reviewer agrees. No quizzes, no likes, no leaderboards.</p>
+          <p class="usp">Watching a video is not learning. You only pass a stage when you can explain each idea in your own words and an AI reviewer agrees, and on practical paths you also have to show real work. No quizzes, no likes, no leaderboards.</p>
           <ul>
-            <li><b>Explain-back gate:</b> each answer is reviewed by an LLM (Gemini). If the model is unavailable, nothing is saved, so the app never fakes a pass.</li>
+            <li><b>Explain-back gate:</b> one idea per step, typed or spoken (Speak instead uses the browser's own speech recognition, so no audio reaches the server). Gemini reviews every answer, and if the model is unavailable nothing is saved, so the app never fakes a pass.</li>
+            <li><b>Own words only:</b> answers that read as AI-written or pasted get two warnings on a stage, then stop counting until the learner explains in their own words.</li>
+            <li><b>Show your work:</b> on the 22 paths where a skill is made or performed, each stage also needs a small piece of real work (a link, photo, short video or PDF) with a write-up the AI reviews.</li>
+            <li><b>Server-trusted progress:</b> a stage is recorded only from ideas and proofs the server accepted, never from answers or reviews the browser sends.</li>
             <li><b>Dopamine Detox:</b> a Detox Score that only verified learning can raise, with focus sessions and a weekly check-in.</li>
-            <li><b>RAG assistant:</b> answers from SkillFlow's own help and catalog with cited sources, using pgvector (HNSW) and full-text search fused with Reciprocal Rank Fusion. For a stage you haven't passed, it gives hints instead of answers.</li>
+            <li><b>RAG assistant:</b> answers from LearnProof's own help and catalog with cited sources, using pgvector (HNSW) and full-text search fused with Reciprocal Rank Fusion. For a stage you haven't passed, it gives hints instead of answers.</li>
             <li>Accepted ideas become notes (Word or PDF export) and return for spaced recall; they also feed mastery, streaks and analytics.</li>
             <li>Built on Next.js Server Components and Server Actions, PostgreSQL with Prisma, Auth.js (Google OAuth), Redis rate limiting and Stripe subscriptions.</li>
             <li>Runs on AWS EC2 with Docker Compose and Caddy (HTTPS), nightly database backups to S3 and uptime monitoring.</li>
@@ -262,7 +265,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
             <div class="fact"><b>30</b><span>learning paths</span></div>
             <div class="fact"><b>246</b><span>stages</span></div>
             <div class="fact"><b>~900</b><span>curated resources</span></div>
-            <div class="fact"><b>280+</b><span>unit tests, plus 12 E2E</span></div>
+            <div class="fact"><b>310+</b><span>unit tests, plus 12 E2E</span></div>
             <div class="fact"><b>100</b><span>Lighthouse accessibility</span></div>
           </div>
           <div class="stack"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>PostgreSQL</span><span>pgvector</span><span>Prisma</span><span>Redis</span><span>Gemini API</span><span>Stripe</span><span>Docker</span><span>AWS EC2 + S3</span><span>GitHub Actions</span><span>Vitest</span><span>Playwright</span></div>
@@ -299,6 +302,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
           </div>
           <div class="stack"><span>Next.js 16</span><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span><span>Redis</span><span>Socket.IO</span><span>WebRTC</span><span>Gemini (embeddings, RAG)</span><span>Docker</span><span>AWS EC2 + ALB + S3</span><span>GitHub Actions</span><span>Playwright</span><span>Figma</span></div>
           <div class="links">
+            <a href="https://entertainverse.dpdns.org" target="_blank" rel="noopener">Live demo ↗</a>
             <a href="https://github.com/reetam-dutta-24/EntertainVerse" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
         </article>
@@ -512,6 +516,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
         <div class="t-item mark"><span class="label">Oct 2026</span><h3>SkillFlow ships</h3><p>Feature list closed on 16 October and deployed to AWS the next day, with HTTPS, backups, CI and monitoring. A RAG assistant followed.</p></div>
         <div class="t-item mark"><span class="label">Oct 2026</span><h3>EntertainVerse goes multi-server</h3><p>RAG, a hybrid recommender, and two servers behind an AWS load balancer, tested with a live failover.</p></div>
         <div class="t-item mark"><span class="label">Oct – Nov 2026</span><h3>Tomorrowhood begins</h3><p>A relocation advisor for 10 global cities, starting with a data scorecard and a 16,889-cell London pipeline.</p></div>
+        <div class="t-item mark"><span class="label">Nov 2026</span><h3>SkillFlow becomes LearnProof</h3><p>A new name, spoken explanations, AI-written answer detection and hands-on proof of work on practical paths.</p></div>
       </div>
     </section>
 
@@ -534,9 +539,9 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
 <script>
 (function () {
   var data = [
-    ["SkillFlow", 216], ["EntertainVerse", 144], ["Home Value Predictor", 69], ["CourtKinetics", 28], ["Tomorrowhood", 19], ["IOCL LNG planner", 9]
+    ["LearnProof", 230], ["EntertainVerse", 153], ["Home Value Predictor", 69], ["CourtKinetics", 28], ["Tomorrowhood", 20], ["IOCL LNG planner", 9]
   ];
-  var max = 216, el = document.getElementById("bars");
+  var max = 230, el = document.getElementById("bars");
   data.forEach(function (d) {
     var row = document.createElement("div");
     row.className = "bar-row";
