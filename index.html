@@ -225,7 +225,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
         <div class="log-head">
           <div>
             <div class="label">Build log · since Jun 2026</div>
-            <div class="log-total">509 commits</div>
+            <div class="log-total">510 commits</div>
           </div>
           <span class="mono" style="color:var(--muted)">across 6 projects</span>
         </div>
@@ -252,7 +252,7 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
           <p class="usp">Watching a video is not learning. You only pass a stage when you can explain each idea in your own words and an AI reviewer agrees, and on practical paths you also have to show real work. No quizzes, no likes, no leaderboards.</p>
           <ul>
             <li><b>Explain-back gate:</b> one idea per step, typed or spoken (Speak instead uses the browser's own speech recognition, so no audio reaches the server). Gemini reviews every answer, and if the model is unavailable nothing is saved, so the app never fakes a pass.</li>
-            <li><b>Own words only:</b> answers that read as AI-written or pasted get two warnings on a stage, then stop counting until the learner explains in their own words.</li>
+            <li><b>Own words matter:</b> answers that read as AI-written or pasted still pass when they are right, but each one shows a warning and costs 5 points of the learner's Retention score (up to 40), so shortcuts are visible without blocking progress.</li>
             <li><b>Show your work:</b> on the 22 paths where a skill is made or performed, each stage also needs a small piece of real work (a link, photo, short video or PDF) with a write-up the AI reviews.</li>
             <li><b>Server-trusted progress:</b> a stage is recorded only from ideas and proofs the server accepted, never from answers or reviews the browser sends.</li>
             <li><b>Dopamine Detox:</b> a Detox Score that only verified learning can raise, with focus sessions and a weekly check-in.</li>
@@ -539,9 +539,9 @@ footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--mute
 <script>
 (function () {
   var data = [
-    ["LearnProof", 230], ["EntertainVerse", 153], ["Home Value Predictor", 69], ["CourtKinetics", 28], ["Tomorrowhood", 20], ["IOCL LNG planner", 9]
+    ["LearnProof", 231], ["EntertainVerse", 153], ["Home Value Predictor", 69], ["CourtKinetics", 28], ["Tomorrowhood", 20], ["IOCL LNG planner", 9]
   ];
-  var max = 230, el = document.getElementById("bars");
+  var max = 231, el = document.getElementById("bars");
   data.forEach(function (d) {
     var row = document.createElement("div");
     row.className = "bar-row";
